@@ -4,18 +4,13 @@ if(isset($_GET['bid']))
 $id=$_GET['bid'];
 
 
+include 'config/db.php';
 
-     $Server="localhost";
-     $username="root";
-     $psrd="";
-     $dbname = "mms";
-     $connection= mysqli_connect($Server,$username,$psrd,$dbname); 
-
-   $query="delete from Product where ProductID='$id'";
+   $query="delete from Product where id='$id'";
 
 
 
-    mysqli_query($connection,$query);
+    mysqli_query($db,$query);
     header('Location:ADeletePost.php');
 }
 ?>

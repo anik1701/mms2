@@ -121,15 +121,9 @@ function bid(id)
 <tbody>
 
 <?php
-
-   $Server="localhost";
-     $username="root";
-     $psrd="";
-     $dbname = "mms";
-     $connection= mysqli_connect($Server,$username,$psrd,$dbname);
-
+include 'config/db.php';
     $query="select * from Product";
-    $Result=mysqli_query($connection,$query);
+    $Result=mysqli_query($db,$query);
    while ($row=mysqli_fetch_array($Result))
     {
           echo "<tr>";

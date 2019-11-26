@@ -8,7 +8,7 @@
 <body>
 <div id="a">
 <form action="" method="POST">
-<table style="width: 80%;" class="table">
+<table style="width: 100%;" class="table">
  <thead>
      <tr>
        <th>Photo</th>
@@ -34,10 +34,10 @@
           echo "<img style='width:100px;height:100px' src='".$row['image']."'>";
           echo "</td>";
           echo "<td>";
-          echo $row['no'];
+          echo $row['id'];
           echo "</td>";
           echo "<td>";
-          echo $row['type'];
+          echo $row['catagory'];
           echo "</td>";
           echo "<td>";
           echo $row['name'];

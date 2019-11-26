@@ -94,7 +94,7 @@ function bid(id)
   {
     alert(id);
 
-    window.location='APostDelete.php?bid='+id
+    window.location='AStockDelete.php?bid='+id
   }
 }
 </script>
@@ -130,10 +130,10 @@ function bid(id)
           echo "<img style='width:100px;height:100px' src='".$row['image']."'>";
           echo "</td>";
           echo "<td>";
-          echo $row['no'];
+          echo $row['id'];
           echo "</td>";
           echo "<td>";
-          echo $row['type'];
+          echo $row['catagory'];
           echo "</td>";
           echo "<td>";
           echo $row['name'];
